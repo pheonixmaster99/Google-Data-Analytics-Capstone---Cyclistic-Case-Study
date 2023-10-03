@@ -42,7 +42,8 @@ The tools being used to analyze the data are Google Spreadsheet and then combine
 
   Subsequently, the files were imported into RStudio and were made into dataframes using the **read_csv** function. 
   ![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/d0138e4a-49e6-4492-a55c-834fd7809a46)
-*Note: The **attach** function was used to attach all the daaframes to the current search path in my local directory. This was not necessary at all, I just did this as my RStudio environment kept on crashing.*
+
+*Note: The **attach** function was used to attach all the dataframes to the current search path in my local directory. This was not necessary at all, I just did this as my RStudio environment kept on crashing.*
 
   Before the files are merged, it is important to check if **all** the columns have identical column names and correctly formatted data types. 
 ![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/ec05ee42-a36e-4e07-8201-a03be8dbf385)
@@ -58,6 +59,7 @@ As seen in the images above, there is no incorrectly formatted data types and al
   > Talk about any null values (leave it for Data cleaning section as well)
 
   After merging all the files together, a cleaning process ensues through using the **clean_names** and **remove_empty** functions, respectively. The former ensures that we remove any spaces, parentheses, etc. from our column titles. The latter ensures that we remove any empty rows & columns from the entire dataset.
+  
 ![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/b8dabfb3-1b07-48ec-8153-1dee2d5f5f22)
 
   Once the cleaning process is complete, we need to add new columns to the merged dataframe. The  columns are: Day of the Week, Start hour (using **format(as.POSIXct)**, Month (using **format(as.Date())**, and trip duration (**using difftime()**). 
@@ -68,6 +70,22 @@ The Day of the Week column was added using Google Spreadsheets with the **WEEKDA
 
 ![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/bf45eeb5-b6e7-4b4d-a69e-2fddf0a7f878)
 
+> Start hour
+Start hour column extracts a TIME HOUR format from an object, which is formatted in a date/time manner. The function utilized is **format(as.POSIXct)**, where the POSIXct extacts a TIME HOUR format from an object as mentioned before.
+![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/dfe69688-6df5-4033-bc17-e75a935ffc5c)
+
+> Month
+The Month column is used to extract a month column from the an object, which is again formatted in a date/time manner. This time, it is done using the **format(as.Date())** function, where as.Date() extracts the date from the date/time object.
+![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/9d79a7b4-74a7-40e5-babb-bdae6e108346)
+
+> Trip Duration
+Trip duration calculates the time the rider took when using the Cyclistic services. It does this by using **difftime()**, which calculates the difference between two columns within a dataset (with those columns having a date format).
+![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/0c00044a-973a-4c65-9f02-0ed274ef5d27)
+
+*Note: The **$** is used to **access/select** a specific column within the dataframe.*
+
+A final cleaning is done one last time, with the data being filtered out to ensure that any trip durations less than or equialent to 0 are removed. In this manner, we create a new dataframe called 'cleaned_df'. The new dataframe is that written into a new csv file called 'Cyclistic_2.csv' to have it ready for visulaization purposes in **Tableau Public**.
+![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/a4d98bbe-196b-4736-9a96-fe08b9b8c715)
 
 # Analyze 
 
