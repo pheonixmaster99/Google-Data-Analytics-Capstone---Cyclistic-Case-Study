@@ -71,14 +71,17 @@ The Day of the Week column was added using Google Spreadsheets with the **WEEKDA
 ![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/bf45eeb5-b6e7-4b4d-a69e-2fddf0a7f878)
 
 > Start hour
+
 Start hour column extracts a TIME HOUR format from an object, which is formatted in a date/time manner. The function utilized is **format(as.POSIXct)**, where the POSIXct extacts a TIME HOUR format from an object as mentioned before.
 ![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/dfe69688-6df5-4033-bc17-e75a935ffc5c)
 
 > Month
+
 The Month column is used to extract a month column from the an object, which is again formatted in a date/time manner. This time, it is done using the **format(as.Date())** function, where as.Date() extracts the date from the date/time object.
 ![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/9d79a7b4-74a7-40e5-babb-bdae6e108346)
 
 > Trip Duration
+
 Trip duration calculates the time the rider took when using the Cyclistic services. It does this by using **difftime()**, which calculates the difference between two columns within a dataset (with those columns having a date format).
 ![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/0c00044a-973a-4c65-9f02-0ed274ef5d27)
 
