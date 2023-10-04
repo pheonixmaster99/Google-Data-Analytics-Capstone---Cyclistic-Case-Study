@@ -91,6 +91,20 @@ A final cleaning is done one last time, with the data being filtered out to ensu
 ![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/a4d98bbe-196b-4736-9a96-fe08b9b8c715)
 
 # Analyze 
+The business task we have to solve for is "**Devising marketing strategies necessary to convert casual riders into annual members**". The task will be solved by obtaining answers to the following questions:
 
+1) How does the ridership vary between members by each day of week?
+2) How does the average trip duration vary between casual and annual members?
+3) What is the hourly usage difference between casual and annual members?
+4) What are the most popular destinations visited by the members?
+
+All of these questions give us an answer into understanding the pattern of behaviour between casual and annuual member usage of bikes. All the plots of this were carried out on **_Tableau Public_**.
+
+### 1) Ridership variation by member type
+![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/60fa3166-8555-4b77-af10-2808d2d91bd4)
+
+The image above showcases that the usage of bikes by annual members (orange line) is the greatest during the weekdays and slows down during the weekend. For casual members (blue line) the usage is the slowest during the weekays and picks up during the weekend. The graph also indicates that ridership for the annual members is much higher than that of casual members, implying a relationship to annual members using the bikes as their main source of transportation in contrast to casual members. 
+
+### 2) Average trip duration by member type
 
 # Act
