@@ -106,5 +106,19 @@ All of these questions give us an answer into understanding the pattern of behav
 The image above showcases that the usage of bikes by annual members (orange line) is the greatest during the weekdays and slows down during the weekend. For casual members (blue line) the usage is the slowest during the weekays and picks up during the weekend. The graph also indicates that ridership for the annual members is much higher than that of casual members, implying a relationship to annual members using the bikes as their main source of transportation in contrast to casual members. 
 
 ### 2) Average trip duration by member type
+![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/0a11798a-fc4b-4208-8b1f-c57775d86a22)
+
+The image above showcases the average trip duration of bikes of casual vs. annual members. Casual members use the bike 2x more often to travel around than that of annual members. This implies that annual members perhaps utilize bikes for day-to-day activities, in commuting from home to work and vice versa. In comparison, the casual members probably utilize the bikes more for leisurely and sport activities in general, leading to overall increased usage time. 
+
+### 3) Hourly Usage Diffrence between casual and annual members
+We can further confirm our hypothesis by inspecting the hourly usage of bikes on weekdays (Monday through Friday). 
+
+![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/92dfcec4-9812-4581-b007-61aa6994d7b4)
+
+The image above showcases the hourly usage of bikes from Monday through Friday. At 8AM and 5PM, the number of riders is the greatest for annual members. This coincides with a typical workday for people with jobs. As people are often getting to work at 8AM and returning from work at 5PM, it therefore explains the phenomenon of annual members using bikes to commute to and from work. 
+
+![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/516b205c-fe0f-4dee-bea6-708742024aca)
+
+In contrast, the ...
 
 # Act
