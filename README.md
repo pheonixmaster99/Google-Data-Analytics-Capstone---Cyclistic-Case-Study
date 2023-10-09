@@ -38,9 +38,11 @@ The tools being used to analyze the data are Google Spreadsheet and then combine
 > Talk about using R to upload the packages
 
   In order to process all the records, RStudio was utilized as Google Spreadsheet would not be able to handle such vasts amount of data. As such, the first step was to install and load packages such as **Tidyverse, Janitor, Lubridate, and Dplyr** as seen below.
+  
   ![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/afb35794-9856-4da8-9c08-0d461d0a9c16)
 
   Subsequently, the files were imported into RStudio and were made into dataframes using the **read_csv** function. 
+  
   ![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/d0138e4a-49e6-4492-a55c-834fd7809a46)
 
 *Note: The **attach** function was used to attach all the dataframes to the current search path in my local directory. This was not necessary at all, I just did this as my RStudio environment kept on crashing.*
@@ -48,7 +50,9 @@ The tools being used to analyze the data are Google Spreadsheet and then combine
   Before the files are merged, it is important to check if **all** the columns have identical column names and correctly formatted data types. 
 ![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/ec05ee42-a36e-4e07-8201-a03be8dbf385)
 ![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/df63c9d9-c817-489e-bf41-b40c0f8ff77a)
+
 As seen in the images above, there is no incorrectly formatted data types and all the column names are identical. Finally, the data is then merged together using the **bind_rows** method, which is part of **dplyr** package.
+
 ![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/fa9fab14-44c2-4285-b64d-3e33e0ddd0b5)
 
 ## Data Cleaning & Data Exploration
@@ -73,21 +77,25 @@ The Day of the Week column was added using Google Spreadsheets with the **WEEKDA
 > Start hour
 
 Start hour column extracts a TIME HOUR format from an object, which is formatted in a date/time manner. The function utilized is **format(as.POSIXct)**, where the POSIXct extacts a TIME HOUR format from an object as mentioned before.
+
 ![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/dfe69688-6df5-4033-bc17-e75a935ffc5c)
 
 > Month
 
 The Month column is used to extract a month column from the an object, which is again formatted in a date/time manner. This time, it is done using the **format(as.Date())** function, where as.Date() extracts the date from the date/time object.
+
 ![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/9d79a7b4-74a7-40e5-babb-bdae6e108346)
 
 > Trip Duration
 
 Trip duration calculates the time the rider took when using the Cyclistic services. It does this by using **difftime()**, which calculates the difference between two columns within a dataset (with those columns having a date format).
+
 ![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/0c00044a-973a-4c65-9f02-0ed274ef5d27)
 
 *Note: The **$** is used to **access/select** a specific column within the dataframe.*
 
-A final cleaning is done one last time, with the data being filtered out to ensure that any trip durations less than or equialent to 0 are removed. In this manner, we create a new dataframe called 'cleaned_df'. The new dataframe is that written into a new csv file called 'Cyclistic_2.csv' to have it ready for visulaization purposes in **Tableau Public**.
+A final cleaning is done one last time, with the data being filtered out to ensure that any trip durations less than or equialent to 0 are removed. In this manner, we create a new dataframe called 'cleaned_df'. The new dataframe is that written into a new csv file called 'Cyclistic_2.csv' to have it ready for visulaization purposes in **_Tableau Public_**.
+
 ![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/a4d98bbe-196b-4736-9a96-fe08b9b8c715)
 
 # Analyze 
@@ -96,7 +104,7 @@ The business task we have to solve for is "**Devising marketing strategies neces
 1) How does the ridership vary between members by each day of week?
 2) How does the average trip duration vary between casual and annual members?
 3) What is the hourly usage difference between casual and annual members?
-4) What are the most popular destinations visited by the members?
+4)  What are the most popular destinations where members (casual and annual members) start their rides?
 
 All of these questions give us an answer into understanding the pattern of behaviour between casual and annuual member usage of bikes. All the plots of this were carried out on **_Tableau Public_**.
 
@@ -113,12 +121,33 @@ The image above showcases the average trip duration of bikes of casual vs. annua
 ### 3) Hourly Usage Diffrence between casual and annual members
 We can further confirm our hypothesis by inspecting the hourly usage of bikes on weekdays (Monday through Friday). 
 
-![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/92dfcec4-9812-4581-b007-61aa6994d7b4)
+![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/8fb52111-f577-4296-a193-3d7ce6181a3f)
 
 The image above showcases the hourly usage of bikes from Monday through Friday. At 8AM and 5PM, the number of riders is the greatest for annual members. This coincides with a typical workday for people with jobs. As people are often getting to work at 8AM and returning from work at 5PM, it therefore explains the phenomenon of annual members using bikes to commute to and from work. 
 
-![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/516b205c-fe0f-4dee-bea6-708742024aca)
+![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/30199784-ace3-4cd0-a876-9f1596b3a7a0)
 
-In contrast, the ...
+In contrast, the majority of the casual riders start their rides from 10AM onwards on the weekdays (except a brief spike at 8AM), which continues until 5PM. After this, it drops in usage, as we approach the night. 
+
+### 4) What are the most popular destinations where members (casual and annual members) start their rides?
+The plots below showcase the popular stations separated by membership type (casual vs. annual members).
+
+![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/4d25bcd9-819f-40d4-a1bf-85576e55be8f)
+
+The frequently visited stations among annual members are concentrated in densely populated office areas and working spaces. 
+
+![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/380df86e-175f-479f-976a-05e042268324)
+
+For casual members, the popular stations are located closer along the coastline, that indicates potential sightseeing or lesiure activities carried out by the aforementioned members. 
 
 # Act
+### Final Conclusions
+Based on the above findings, we can conclude a  few observations.
+
+1. There is good evidence to believe that casual members are composed of tourists and/or families who use the service for leisure activities or weekend sightseeing.
+2. In comparison, there is also strong inclanation to believe that annual members are comprised of mainly working adults that utlize the service to commute to and from work.
+3. dsdf
+
+### Next Steps for Stakeholders
+
+### Next Steps to Expand Findings
