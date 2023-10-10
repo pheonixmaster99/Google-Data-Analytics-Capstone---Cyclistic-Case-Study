@@ -134,20 +134,32 @@ The plots below showcase the popular stations separated by membership type (casu
 
 ![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/4d25bcd9-819f-40d4-a1bf-85576e55be8f)
 
+![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/f6a7bd78-b7de-4c17-9c66-fb8613f98cd9)
+
+
 The frequently visited stations among annual members are concentrated in densely populated office areas and working spaces. 
 
 ![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/380df86e-175f-479f-976a-05e042268324)
 
+![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/b6b07d3c-244c-4c49-b18b-7288ea093b3d)
+
+
 For casual members, the popular stations are located closer along the coastline, that indicates potential sightseeing or lesiure activities carried out by the aforementioned members. 
 
-# Act
+# Act & Share
 ### Final Conclusions
 Based on the above findings, we can conclude a  few observations.
 
 1. There is good evidence to believe that casual members are composed of tourists and/or families who use the service for leisure activities or weekend sightseeing.
 2. In comparison, there is also strong inclanation to believe that annual members are comprised of mainly working adults that utlize the service to commute to and from work.
-3. dsdf
+3. Casual members travel using bikes 2x more longer than annual members, and also ride more often than annual members.
 
-### Next Steps for Stakeholders
-
+### Recommendations for Stakeholders
+1. Launch marketing strategies in areas popular with casual riders. These include areas such as: Streeter Dr & Grand Ave, DuSable Lake Shore Dr & Monroe St, Millenium Park, and Shedd Aquarium. Local marketing strategies involve Digital Marketing on platforms such as Facebook or Instagram to convert casual members to annual ones.
+2. In line with the first point, incentivize members to transition by attaching perks/benefits with being an annual member. This could take the form of points, similar to points cards used by several grocery chains and fast food franchises (e.g., Scene Card or Tim Hortons Points Card).
+3. Raise the prices of casual passes to make it more economical for casual members to switch towards annual memberships.
+   
 ### Next Steps to Expand Findings
+1. A breakdown of pricing of casual and membership plans. Further data into this could allows us to determine the optimal price point to maximize the revenue from both plans. 
+2. A  breakdown of casual memberships, as to how many use single-ride passes versus full-day passes used. This helps understand the data surrounding trip durations and allows us to make further reccomendations.
+3. Additional demographic data of the rider such as age, gender, and martial status. This will allow us to improve accuracy of marketing strategies by tailoring the strategy to specific audience segments. 
