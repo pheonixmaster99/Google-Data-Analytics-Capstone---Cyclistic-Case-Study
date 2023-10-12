@@ -34,9 +34,6 @@ In the end, 4 files were downloaded for Cyclistic usage from January through May
 The tools being used to analyze the data are Google Spreadsheet and then combined together using R as the overall worksheet had 1,065,942 data points after cleaning. 
 
 ## Combining the Data
-> Talk about using Google Spreadsheet to clear duplicates before combining the data as well. 
-> Talk about using R to upload the packages
-
   In order to process all the records, RStudio was utilized as Google Spreadsheet would not be able to handle such vasts amount of data. As such, the first step was to install and load packages such as **Tidyverse, Janitor, Lubridate, and Dplyr** as seen below.
   
   ![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/afb35794-9856-4da8-9c08-0d461d0a9c16)
@@ -56,12 +53,6 @@ As seen in the images above, there is no incorrectly formatted data types and al
 ![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/fa9fab14-44c2-4285-b64d-3e33e0ddd0b5)
 
 ## Data Cleaning & Data Exploration
-> Talk about any data that you removed such as empty rows, duplicate rows, and rows hours for riding were not less than or equivalet to zero. 
-> Talk about any observations made by you with regards to the data
-  >  The fact that thee are three unique types of bike
-  >  The fact that membership type are two unique values: 'Member' and 'Casual'
-  > Talk about any null values (leave it for Data cleaning section as well)
-
   After merging all the files together, a cleaning process ensues through using the **clean_names** and **remove_empty** functions, respectively. The former ensures that we remove any spaces, parentheses, etc. from our column titles. The latter ensures that we remove any empty rows & columns from the entire dataset.
   
 ![image](https://github.com/pheonixmaster99/Google-Data-Analytics-Capstone---Cyclistic-Case-Study/assets/91801911/b8dabfb3-1b07-48ec-8153-1dee2d5f5f22)
